@@ -1,0 +1,474 @@
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:13<00:00, 13.43s/it]100%|██████████| 1/1 [00:13<00:00, 13.43s/it]
+/u8/s43xiao/.local/lib/python3.6/site-packages/torch/nn/parallel/_functions.py:61: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+args:
+Namespace(batch_size=16, bpe_token=False, device='0,1,2,3', encoder_json='tokenizations/encoder.json', epochs=24, gradient_accumulation=1, log_step=4000, lr=0.0002, max_grad_norm=1.0, min_length=1, model_config='config/model_config.json', num_pieces=1, output_dir='model/', pretrained_model='', raw=False, raw_data_path='data/parsed_c3.json', segment=False, tokenized_data_path='data/tokenized/', tokenizer_path='data/vocabs.txt', vocab_bpe='tokenizations/vocab.bpe', warmup_steps=4000, writer_dir='tensorboard_summary')
+config:
+{
+  "attn_pdrop": 0.1,
+  "embd_pdrop": 0.1,
+  "finetuning_task": null,
+  "initializer_range": 0.02,
+  "layer_norm_epsilon": 1e-05,
+  "n_ctx": 72,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 72,
+  "num_labels": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "resid_pdrop": 0.1,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "torchscript": false,
+  "use_bfloat16": false,
+  "vocab_size": 9136
+}
+
+Tesla P40
+number of parameters: 92127744
+calculating total steps
+total steps = 1154104
+Let's use 2 GPUs!
+Tesla P40
+Tesla P40
+starting training
+epoch 1
+time: 2020-04-01 19:11:11.115619
+now time: 19:54. Step 4000 of epoch 1, loss 1.8048976970613002
+now time: 20:32. Step 8000 of epoch 1, loss 1.4473309871703386
+now time: 21:19. Step 12000 of epoch 1, loss 1.351806449636817
+now time: 21:52. Step 16000 of epoch 1, loss 1.2976905549317599
+now time: 22:32. Step 20000 of epoch 1, loss 1.264691505253315
+now time: 23:2. Step 24000 of epoch 1, loss 1.245475511610508
+now time: 23:26. Step 28000 of epoch 1, loss 1.2209957876503468
+now time: 23:51. Step 32000 of epoch 1, loss 1.2105946948230266
+now time: 0:15. Step 36000 of epoch 1, loss 1.1935626455694437
+now time: 0:39. Step 40000 of epoch 1, loss 1.178583564773202
+now time: 1:3. Step 44000 of epoch 1, loss 1.1697388166040181
+now time: 1:28. Step 48000 of epoch 1, loss 1.1626500361561776
+saving model for epoch 1
+epoch 1 finished
+time: 2020-04-02 01:28:39.527965
+time for one epoch: 6:17:28.412346
+epoch 2
+time: 2020-04-02 01:28:39.528039
+now time: 1:52. Step 3913 of epoch 2, loss 1.1327999049574138
+now time: 2:14. Step 7913 of epoch 2, loss 1.1282973357588053
+now time: 2:31. Step 11913 of epoch 2, loss 1.1253278144150973
+now time: 2:50. Step 15913 of epoch 2, loss 1.111769392579794
+now time: 3:14. Step 19913 of epoch 2, loss 1.1104457281827926
+now time: 3:39. Step 23913 of epoch 2, loss 1.106573831960559
+now time: 4:3. Step 27913 of epoch 2, loss 1.0986811811178923
+now time: 4:27. Step 31913 of epoch 2, loss 1.0956120549291373
+now time: 4:52. Step 35913 of epoch 2, loss 1.0902633625417948
+now time: 5:16. Step 39913 of epoch 2, loss 1.0852669337689878
+now time: 5:40. Step 43913 of epoch 2, loss 1.0862491097450255
+now time: 6:5. Step 47913 of epoch 2, loss 1.0793576007038355
+saving model for epoch 2
+epoch 2 finished
+time: 2020-04-02 06:06:27.598104
+time for one epoch: 4:37:48.070065
+epoch 3
+time: 2020-04-02 06:06:27.598179
+now time: 6:30. Step 3826 of epoch 3, loss 1.0426810583919286
+now time: 6:49. Step 7826 of epoch 3, loss 1.0376526757031679
+now time: 7:7. Step 11826 of epoch 3, loss 1.0398648766875267
+now time: 7:27. Step 15826 of epoch 3, loss 1.037690746858716
+now time: 7:52. Step 19826 of epoch 3, loss 1.0349159488081932
+now time: 8:16. Step 23826 of epoch 3, loss 1.0335899522602559
+now time: 8:41. Step 27826 of epoch 3, loss 1.0308542053997516
+now time: 11:2. Step 31826 of epoch 3, loss 1.0300201324224472
+now time: 14:16. Step 35826 of epoch 3, loss 1.0285170019119978
+now time: 16:0. Step 39826 of epoch 3, loss 1.0310117958784104
+now time: 19:12. Step 43826 of epoch 3, loss 1.0281639148145914
+now time: 20:18. Step 47826 of epoch 3, loss 1.0257005990594625
+saving model for epoch 3
+epoch 3 finished
+time: 2020-04-02 20:20:11.553772
+time for one epoch: 14:13:43.955593
+epoch 4
+time: 2020-04-02 20:20:11.553849
+now time: 20:39. Step 3739 of epoch 4, loss 0.9759349662065506
+now time: 20:56. Step 7739 of epoch 4, loss 0.9820748294889927
+now time: 22:15. Step 11739 of epoch 4, loss 0.9783479348421097
+now time: 2:19. Step 15739 of epoch 4, loss 0.9809768737256527
+now time: 6:24. Step 19739 of epoch 4, loss 0.9822549601495266
+now time: 10:27. Step 23739 of epoch 4, loss 0.98255640989542
+now time: 14:36. Step 27739 of epoch 4, loss 0.9845535612106323
+now time: 18:44. Step 31739 of epoch 4, loss 0.9826707184165716
+now time: 23:7. Step 35739 of epoch 4, loss 0.9792920994460583
+now time: 3:21. Step 39739 of epoch 4, loss 0.9765897987335921
+now time: 3:39. Step 43739 of epoch 4, loss 0.9808685877919197
+now time: 4:3. Step 47739 of epoch 4, loss 0.9804127404093742
+saving model for epoch 4
+epoch 4 finished
+time: 2020-04-04 04:05:51.869807
+time for one epoch: 1 day, 7:45:40.315958
+epoch 5
+time: 2020-04-04 04:05:51.869884
+now time: 4:28. Step 3652 of epoch 5, loss 0.9298000708371401
+now time: 4:52. Step 7652 of epoch 5, loss 0.9284385062754155
+now time: 5:17. Step 11652 of epoch 5, loss 0.9327440087646246
+now time: 5:41. Step 15652 of epoch 5, loss 0.9354049015194178
+now time: 6:6. Step 19652 of epoch 5, loss 0.9378760812431574
+now time: 6:30. Step 23652 of epoch 5, loss 0.9382411037981511
+now time: 6:55. Step 27652 of epoch 5, loss 0.9406661628186703
+now time: 7:19. Step 31652 of epoch 5, loss 0.9423619290441274
+now time: 7:39. Step 35652 of epoch 5, loss 0.9421463893800974
+now time: 7:57. Step 39652 of epoch 5, loss 0.9433563238084316
+now time: 8:17. Step 43652 of epoch 5, loss 0.9395276405364275
+now time: 8:41. Step 47652 of epoch 5, loss 0.9408203414529562
+saving model for epoch 5
+epoch 5 finished
+time: 2020-04-04 08:44:31.640811
+time for one epoch: 4:38:39.770927
+epoch 6
+time: 2020-04-04 08:44:31.640894
+now time: 9:6. Step 3565 of epoch 6, loss 0.8914303674250841
+now time: 9:31. Step 7565 of epoch 6, loss 0.8900891250967979
+now time: 9:55. Step 11565 of epoch 6, loss 0.8930802650004626
+now time: 12:20. Step 15565 of epoch 6, loss 0.8967553794234991
+now time: 15:29. Step 19565 of epoch 6, loss 0.9002995799034834
+now time: 18:28. Step 23565 of epoch 6, loss 0.902995239123702
+now time: 21:36. Step 27565 of epoch 6, loss 0.901298417121172
+now time: 0:44. Step 31565 of epoch 6, loss 0.9027433459162713
+now time: 3:50. Step 35565 of epoch 6, loss 0.9074042130559683
+now time: 6:48. Step 39565 of epoch 6, loss 0.9076628874689341
+now time: 9:55. Step 43565 of epoch 6, loss 0.9080293954908848
+now time: 12:40. Step 47565 of epoch 6, loss 0.908643568187952
+saving model for epoch 6
+epoch 6 finished
+time: 2020-04-05 13:02:48.276406
+time for one epoch: 1 day, 4:18:16.635512
+epoch 7
+time: 2020-04-05 13:02:48.276452
+now time: 15:23. Step 3478 of epoch 7, loss 0.8550041232258081
+now time: 17:38. Step 7478 of epoch 7, loss 0.8510240034461022
+now time: 19:50. Step 11478 of epoch 7, loss 0.8564580553621054
+now time: 22:4. Step 15478 of epoch 7, loss 0.863989832252264
+now time: 0:17. Step 19478 of epoch 7, loss 0.8635244810134173
+now time: 2:30. Step 23478 of epoch 7, loss 0.8703371545523405
+now time: 4:43. Step 27478 of epoch 7, loss 0.8681004956662655
+now time: 6:56. Step 31478 of epoch 7, loss 0.8764588104337454
+now time: 9:6. Step 35478 of epoch 7, loss 0.8755616761893034
+now time: 9:24. Step 39478 of epoch 7, loss 0.8769176348149776
+now time: 9:49. Step 43478 of epoch 7, loss 0.8773198521062732
+now time: 10:10. Step 47478 of epoch 7, loss 0.8801374441832304
+saving model for epoch 7
+epoch 7 finished
+time: 2020-04-06 10:13:52.211700
+time for one epoch: 21:11:03.935248
+epoch 8
+time: 2020-04-06 10:13:52.211748
+now time: 10:32. Step 3391 of epoch 8, loss 0.8232276037186385
+now time: 10:54. Step 7391 of epoch 8, loss 0.8186104950159788
+now time: 11:15. Step 11391 of epoch 8, loss 0.8242460962831974
+now time: 11:43. Step 15391 of epoch 8, loss 0.8305289642810821
+now time: 12:6. Step 19391 of epoch 8, loss 0.8360624578744174
+now time: 12:27. Step 23391 of epoch 8, loss 0.8372132895588875
+now time: 12:48. Step 27391 of epoch 8, loss 0.8415481456667184
+now time: 13:10. Step 31391 of epoch 8, loss 0.8412568165063858
+now time: 13:40. Step 35391 of epoch 8, loss 0.8472314546257258
+now time: 14:3. Step 39391 of epoch 8, loss 0.8492522926181555
+now time: 14:25. Step 43391 of epoch 8, loss 0.8497679649293423
+now time: 14:46. Step 47391 of epoch 8, loss 0.8536791495233774
+saving model for epoch 8
+epoch 8 finished
+time: 2020-04-06 14:50:18.742217
+time for one epoch: 4:36:26.530469
+epoch 9
+time: 2020-04-06 14:50:18.742264
+now time: 15:8. Step 3304 of epoch 9, loss 0.7938121818006039
+now time: 15:37. Step 7304 of epoch 9, loss 0.7901755288392306
+now time: 15:59. Step 11304 of epoch 9, loss 0.7968680582344532
+now time: 16:20. Step 15304 of epoch 9, loss 0.8031505067646504
+now time: 16:41. Step 19304 of epoch 9, loss 0.807028839468956
+now time: 17:3. Step 23304 of epoch 9, loss 0.8078659484609961
+now time: 17:32. Step 27304 of epoch 9, loss 0.8153872858285904
+now time: 17:53. Step 31304 of epoch 9, loss 0.8162065073847771
+now time: 18:15. Step 35304 of epoch 9, loss 0.8208420495837927
+now time: 18:36. Step 39304 of epoch 9, loss 0.8179724183529615
+now time: 18:58. Step 43304 of epoch 9, loss 0.8247435598522425
+now time: 19:27. Step 47304 of epoch 9, loss 0.8237381313070655
+saving model for epoch 9
+epoch 9 finished
+time: 2020-04-06 19:31:44.962055
+time for one epoch: 4:41:26.219791
+epoch 10
+time: 2020-04-06 19:31:44.962106
+now time: 19:49. Step 3217 of epoch 10, loss 0.7703405220806598
+now time: 20:10. Step 7217 of epoch 10, loss 0.7645089016631246
+now time: 20:32. Step 11217 of epoch 10, loss 0.77082424685359
+now time: 20:53. Step 15217 of epoch 10, loss 0.7750870735496282
+now time: 21:22. Step 19217 of epoch 10, loss 0.7799320102408528
+now time: 21:44. Step 23217 of epoch 10, loss 0.7842602892369032
+now time: 22:5. Step 27217 of epoch 10, loss 0.7892947825044394
+now time: 22:26. Step 31217 of epoch 10, loss 0.7894611070677638
+now time: 22:48. Step 35217 of epoch 10, loss 0.7916219347119331
+now time: 23:17. Step 39217 of epoch 10, loss 0.7966916918754577
+now time: 23:38. Step 43217 of epoch 10, loss 0.795977288544178
+now time: 0:0. Step 47217 of epoch 10, loss 0.8006388973891735
+saving model for epoch 10
+epoch 10 finished
+time: 2020-04-07 00:04:58.291945
+time for one epoch: 4:33:13.329839
+epoch 11
+time: 2020-04-07 00:04:58.291989
+now time: 0:22. Step 3130 of epoch 11, loss 0.7432259765118361
+now time: 0:43. Step 7130 of epoch 11, loss 0.7373867817744613
+now time: 1:12. Step 11130 of epoch 11, loss 0.7478426127955318
+now time: 1:33. Step 15130 of epoch 11, loss 0.7508651129081845
+now time: 1:55. Step 19130 of epoch 11, loss 0.7563517531305551
+now time: 2:16. Step 23130 of epoch 11, loss 0.7611764035969972
+now time: 2:38. Step 27130 of epoch 11, loss 0.7652405403703452
+now time: 3:6. Step 31130 of epoch 11, loss 0.7668333679437638
+now time: 3:28. Step 35130 of epoch 11, loss 0.76794977247715
+now time: 3:50. Step 39130 of epoch 11, loss 0.7697404253333807
+now time: 4:11. Step 43130 of epoch 11, loss 0.774872506916523
+now time: 4:34. Step 47130 of epoch 11, loss 0.7756062185913324
+saving model for epoch 11
+epoch 11 finished
+time: 2020-04-07 04:41:29.263298
+time for one epoch: 4:36:30.971309
+epoch 12
+time: 2020-04-07 04:41:29.263346
+now time: 5:2. Step 3043 of epoch 12, loss 0.721757308460772
+now time: 5:23. Step 7043 of epoch 12, loss 0.7164610127806663
+now time: 5:45. Step 11043 of epoch 12, loss 0.7197250667065382
+now time: 6:6. Step 15043 of epoch 12, loss 0.7267180692777038
+now time: 6:29. Step 19043 of epoch 12, loss 0.7342068957388401
+now time: 6:56. Step 23043 of epoch 12, loss 0.735479867361486
+now time: 7:18. Step 27043 of epoch 12, loss 0.7410507464185357
+now time: 7:39. Step 31043 of epoch 12, loss 0.742734458066523
+now time: 8:1. Step 35043 of epoch 12, loss 0.748022204592824
+now time: 8:25. Step 39043 of epoch 12, loss 0.7478117258772254
+now time: 8:51. Step 43043 of epoch 12, loss 0.7514122615158558
+now time: 9:13. Step 47043 of epoch 12, loss 0.7533041122108698
+saving model for epoch 12
+epoch 12 finished
+time: 2020-04-07 09:18:40.128664
+time for one epoch: 4:37:10.865318
+epoch 13
+time: 2020-04-07 09:18:40.128740
+now time: 9:34. Step 2956 of epoch 13, loss 0.7043835866153241
+now time: 9:56. Step 6956 of epoch 13, loss 0.6932994514480233
+now time: 10:21. Step 10956 of epoch 13, loss 0.6992990862205625
+now time: 10:46. Step 14956 of epoch 13, loss 0.7090333711877466
+now time: 11:8. Step 18956 of epoch 13, loss 0.7091972630396486
+now time: 11:29. Step 22956 of epoch 13, loss 0.71450149525702
+now time: 11:50. Step 26956 of epoch 13, loss 0.7192321811169385
+now time: 12:31. Step 30956 of epoch 13, loss 0.7220716148465872
+now time: 13:51. Step 34956 of epoch 13, loss 0.7206964973881841
+now time: 14:45. Step 38956 of epoch 13, loss 0.7251407391652465
+now time: 15:36. Step 42956 of epoch 13, loss 0.7306131795868278
+now time: 16:26. Step 46956 of epoch 13, loss 0.7326280102357269
+saving model for epoch 13
+epoch 13 finished
+time: 2020-04-07 16:44:02.846616
+time for one epoch: 7:25:22.717876
+epoch 14
+time: 2020-04-07 16:44:02.846660
+now time: 17:6. Step 2869 of epoch 14, loss 0.6832123754024506
+now time: 18:0. Step 6869 of epoch 14, loss 0.672715415544808
+now time: 18:39. Step 10869 of epoch 14, loss 0.6801894409731031
+now time: 19:26. Step 14869 of epoch 14, loss 0.6844255638793111
+now time: 19:54. Step 18869 of epoch 14, loss 0.6917362613528967
+now time: 20:28. Step 22869 of epoch 14, loss 0.6948980072140694
+now time: 20:47. Step 26869 of epoch 14, loss 0.6960305266007781
+now time: 2:19. Step 30869 of epoch 14, loss 0.70216345885396
+now time: 5:29. Step 34869 of epoch 14, loss 0.7015725625157356
+now time: 5:52. Step 38869 of epoch 14, loss 0.7052641759067774
+now time: 6:17. Step 42869 of epoch 14, loss 0.7072627008855343
+now time: 6:47. Step 46869 of epoch 14, loss 0.7099385843053461
+saving model for epoch 14
+epoch 14 finished
+time: 2020-04-08 06:56:22.027677
+time for one epoch: 14:12:19.181017
+epoch 15
+time: 2020-04-08 06:56:22.027734
+now time: 7:16. Step 2782 of epoch 15, loss 0.6677305971160531
+now time: 7:42. Step 6782 of epoch 15, loss 0.6514203489944339
+now time: 8:5. Step 10782 of epoch 15, loss 0.6621935878172517
+now time: 8:32. Step 14782 of epoch 15, loss 0.6642106736153364
+now time: 9:3. Step 18782 of epoch 15, loss 0.6695497598871589
+now time: 9:29. Step 22782 of epoch 15, loss 0.674141581647098
+now time: 9:51. Step 26782 of epoch 15, loss 0.6773897113054991
+now time: 10:14. Step 30782 of epoch 15, loss 0.683072477556765
+now time: 10:40. Step 34782 of epoch 15, loss 0.6817130586877466
+now time: 13:30. Step 38782 of epoch 15, loss 0.685817781791091
+now time: 19:38. Step 42782 of epoch 15, loss 0.6904076407551766
+now time: 20:22. Step 46782 of epoch 15, loss 0.690537052936852
+saving model for epoch 15
+epoch 15 finished
+time: 2020-04-08 20:40:41.575664
+time for one epoch: 13:44:19.547930
+epoch 16
+time: 2020-04-08 20:40:41.575712
+now time: 21:11. Step 2695 of epoch 16, loss 0.6469247040599585
+now time: 21:37. Step 6695 of epoch 16, loss 0.6367860122546554
+now time: 22:7. Step 10695 of epoch 16, loss 0.6422560526430607
+now time: 22:37. Step 14695 of epoch 16, loss 0.6476899823918939
+now time: 23:3. Step 18695 of epoch 16, loss 0.6521390201449394
+now time: 23:23. Step 22695 of epoch 16, loss 0.6530618517547846
+now time: 23:49. Step 26695 of epoch 16, loss 0.657004033073783
+now time: 0:20. Step 30695 of epoch 16, loss 0.6619287610724568
+now time: 0:49. Step 34695 of epoch 16, loss 0.6641861343756318
+now time: 1:10. Step 38695 of epoch 16, loss 0.6675229280367494
+now time: 1:31. Step 42695 of epoch 16, loss 0.668774679005146
+now time: 2:1. Step 46695 of epoch 16, loss 0.670768055409193
+saving model for epoch 16
+epoch 16 finished
+time: 2020-04-09 02:11:41.456410
+time for one epoch: 5:30:59.880698
+epoch 17
+time: 2020-04-09 02:11:41.456476
+now time: 2:31. Step 2608 of epoch 17, loss 0.6343940790742636
+now time: 2:58. Step 6608 of epoch 17, loss 0.6180938131734729
+now time: 3:19. Step 10608 of epoch 17, loss 0.6232365362495184
+now time: 3:40. Step 14608 of epoch 17, loss 0.6304938235729933
+now time: 3:54. Step 18608 of epoch 17, loss 0.6336330022737384
+now time: 4:8. Step 22608 of epoch 17, loss 0.6387132339179515
+now time: 4:22. Step 26608 of epoch 17, loss 0.6408807605728507
+now time: 4:36. Step 30608 of epoch 17, loss 0.6425253470689058
+now time: 4:50. Step 34608 of epoch 17, loss 0.6463034168556333
+now time: 5:4. Step 38608 of epoch 17, loss 0.6489927634000778
+now time: 5:18. Step 42608 of epoch 17, loss 0.6486833754852415
+now time: 5:32. Step 46608 of epoch 17, loss 0.6521246042326093
+saving model for epoch 17
+epoch 17 finished
+time: 2020-04-09 05:37:18.042627
+time for one epoch: 3:25:36.586151
+epoch 18
+time: 2020-04-09 05:37:18.042697
+now time: 5:46. Step 2521 of epoch 18, loss 0.6174653720706701
+now time: 6:0. Step 6521 of epoch 18, loss 0.6037511204034091
+now time: 6:14. Step 10521 of epoch 18, loss 0.6092684259712696
+now time: 6:28. Step 14521 of epoch 18, loss 0.611207496508956
+now time: 6:42. Step 18521 of epoch 18, loss 0.6156871543005109
+now time: 6:56. Step 22521 of epoch 18, loss 0.6209634512066841
+now time: 7:10. Step 26521 of epoch 18, loss 0.6242153964415192
+now time: 7:24. Step 30521 of epoch 18, loss 0.6251827795878053
+now time: 7:38. Step 34521 of epoch 18, loss 0.6295258044302463
+now time: 7:52. Step 38521 of epoch 18, loss 0.6300327613800764
+now time: 8:6. Step 42521 of epoch 18, loss 0.6303666857928037
+now time: 8:20. Step 46521 of epoch 18, loss 0.6333237816095352
+saving model for epoch 18
+epoch 18 finished
+time: 2020-04-09 08:25:35.734403
+time for one epoch: 2:48:17.691706
+epoch 19
+time: 2020-04-09 08:25:35.734470
+now time: 8:34. Step 2434 of epoch 19, loss 0.6042807072922587
+now time: 8:48. Step 6434 of epoch 19, loss 0.5893759676665068
+now time: 9:2. Step 10434 of epoch 19, loss 0.5933885730057955
+now time: 9:16. Step 14434 of epoch 19, loss 0.5967332439273596
+now time: 9:30. Step 18434 of epoch 19, loss 0.601910109654069
+now time: 9:44. Step 22434 of epoch 19, loss 0.6024079742133618
+now time: 9:58. Step 26434 of epoch 19, loss 0.6067885539084673
+now time: 10:12. Step 30434 of epoch 19, loss 0.6058913574889302
+now time: 10:27. Step 34434 of epoch 19, loss 0.6110060632303357
+now time: 10:42. Step 38434 of epoch 19, loss 0.6140612109303475
+now time: 13:30. Step 42434 of epoch 19, loss 0.6146816223338246
+now time: 17:42. Step 46434 of epoch 19, loss 0.6168660039603711
+saving model for epoch 19
+epoch 19 finished
+time: 2020-04-09 19:04:37.359075
+time for one epoch: 10:39:01.624605
+epoch 20
+time: 2020-04-09 19:04:37.359110
+now time: 20:49. Step 2347 of epoch 20, loss 0.5902137237861752
+now time: 21:44. Step 6347 of epoch 20, loss 0.5775554165318608
+now time: 22:19. Step 10347 of epoch 20, loss 0.5785637048408389
+now time: 23:6. Step 14347 of epoch 20, loss 0.5820516426712274
+now time: 23:36. Step 18347 of epoch 20, loss 0.5859969601854682
+now time: 23:52. Step 22347 of epoch 20, loss 0.587551515892148
+now time: 0:12. Step 26347 of epoch 20, loss 0.591783050596714
+now time: 0:32. Step 30347 of epoch 20, loss 0.5926527822390198
+now time: 0:48. Step 34347 of epoch 20, loss 0.5939526244625449
+now time: 1:8. Step 38347 of epoch 20, loss 0.5964151730909943
+now time: 1:28. Step 42347 of epoch 20, loss 0.596565857604146
+now time: 1:44. Step 46347 of epoch 20, loss 0.5989241504073143
+saving model for epoch 20
+epoch 20 finished
+time: 2020-04-10 01:51:24.167869
+time for one epoch: 6:46:46.808759
+epoch 21
+time: 2020-04-10 01:51:24.167936
+now time: 2:4. Step 2260 of epoch 21, loss 0.5763568370118737
+now time: 2:24. Step 6260 of epoch 21, loss 0.5616763340458274
+now time: 2:40. Step 10260 of epoch 21, loss 0.5692883739247918
+now time: 2:56. Step 14260 of epoch 21, loss 0.5710111583471298
+now time: 3:10. Step 18260 of epoch 21, loss 0.5713332588300108
+now time: 3:24. Step 22260 of epoch 21, loss 0.5722846048399806
+now time: 3:38. Step 26260 of epoch 21, loss 0.5738451442494988
+now time: 3:52. Step 30260 of epoch 21, loss 0.5783682777658105
+now time: 4:6. Step 34260 of epoch 21, loss 0.5789224011078477
+now time: 4:20. Step 38260 of epoch 21, loss 0.5801870812475681
+now time: 4:34. Step 42260 of epoch 21, loss 0.5817280319184065
+now time: 4:48. Step 46260 of epoch 21, loss 0.5821820821836591
+saving model for epoch 21
+epoch 21 finished
+time: 2020-04-10 04:54:45.214900
+time for one epoch: 3:03:21.046964
+epoch 22
+time: 2020-04-10 04:54:45.214967
+now time: 5:2. Step 2173 of epoch 22, loss 0.56715791105479
+now time: 5:16. Step 6173 of epoch 22, loss 0.5523592174276709
+now time: 5:30. Step 10173 of epoch 22, loss 0.5548055914491415
+now time: 5:44. Step 14173 of epoch 22, loss 0.5585318466052412
+now time: 5:58. Step 18173 of epoch 22, loss 0.5588319477811455
+now time: 6:12. Step 22173 of epoch 22, loss 0.5585288541615009
+now time: 6:26. Step 26173 of epoch 22, loss 0.5616405171081423
+now time: 6:40. Step 30173 of epoch 22, loss 0.563547235071659
+now time: 6:54. Step 34173 of epoch 22, loss 0.5637736748531461
+now time: 7:8. Step 38173 of epoch 22, loss 0.5662940482422709
+now time: 7:22. Step 42173 of epoch 22, loss 0.5665021122694015
+now time: 7:36. Step 46173 of epoch 22, loss 0.565518398322165
+saving model for epoch 22
+epoch 22 finished
+time: 2020-04-10 07:43:02.968764
+time for one epoch: 2:48:17.753797
+epoch 23
+time: 2020-04-10 07:43:02.968827
+now time: 7:50. Step 2086 of epoch 23, loss 0.5548946322128177
+now time: 8:4. Step 6086 of epoch 23, loss 0.5439389168992639
+now time: 8:18. Step 10086 of epoch 23, loss 0.5447883414849639
+now time: 8:32. Step 14086 of epoch 23, loss 0.5487779440954328
+now time: 8:46. Step 18086 of epoch 23, loss 0.5477026759311557
+now time: 9:0. Step 22086 of epoch 23, loss 0.5495161905288696
+now time: 9:14. Step 26086 of epoch 23, loss 0.5491000537574291
+now time: 9:28. Step 30086 of epoch 23, loss 0.549980879932642
+now time: 9:42. Step 34086 of epoch 23, loss 0.5484302808344365
+now time: 9:56. Step 38086 of epoch 23, loss 0.5501635672226548
+now time: 10:10. Step 42086 of epoch 23, loss 0.5528400956019759
+now time: 11:54. Step 46086 of epoch 23, loss 0.5525756605491042
+saving model for epoch 23
+epoch 23 finished
+time: 2020-04-10 12:34:24.580593
+time for one epoch: 4:51:21.611766
+epoch 24
+time: 2020-04-10 12:34:24.580700
+now time: 13:19. Step 1999 of epoch 24, loss 0.5454443862736225
+now time: 14:44. Step 5999 of epoch 24, loss 0.5353105731159449
+now time: 16:13. Step 9999 of epoch 24, loss 0.5384423776045442
+now time: 17:37. Step 13999 of epoch 24, loss 0.53760474345088
+now time: 18:58. Step 17999 of epoch 24, loss 0.5382432109937072
+now time: 20:1. Step 21999 of epoch 24, loss 0.5387016933560371
+now time: 21:9. Step 25999 of epoch 24, loss 0.5405962595790624
+now time: 22:27. Step 29999 of epoch 24, loss 0.5376135176122189
+now time: 23:16. Step 33999 of epoch 24, loss 0.5379826096892357
+now time: 0:33. Step 37999 of epoch 24, loss 0.5390109274089336
+now time: 1:15. Step 41999 of epoch 24, loss 0.5375431010350585
+now time: 1:34. Step 45999 of epoch 24, loss 0.5397436012402177
+saving model for epoch 24
+epoch 24 finished
+time: 2020-04-11 01:43:38.908277
+time for one epoch: 13:09:14.327577
+training finished
