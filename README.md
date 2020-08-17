@@ -1,6 +1,7 @@
 # GPT2-Chinese-Couplet
 ## Description
-this project extends from the "GPT2-Chinese" and Uber's "PPLM" projects, please read the "LICENSE_GPT2_Chinese" and "LICENSE_PPLM" files
+This is a project I did earlier this year, a transformer-based generation model that is focusing on completing Chinese couplets. This model has integrated controlled text generation with plug and play language model by Uber’s research team.
+This project extends from the "GPT2-Chinese" and Uber's "PPLM" projects, please read the "LICENSE_GPT2_Chinese" and "LICENSE_PPLM" first
 
 ## Preparation:
 pip3 install -r requirements.txt
